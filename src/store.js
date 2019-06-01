@@ -8,12 +8,12 @@ export default new Vuex.Store({
     drawer: false
   },
   mutations: {
-    toggleSideMunu(state) {
+    toggleSideMenu (state) {
       state.drawer = !state.drawer
     }
   },
   actions: {
-    toggleSideMunu({ commit }) {
+    toggleSideMenu ({ commit }) {
       commit('toggleSideMenu')
     }
   }

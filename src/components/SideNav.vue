@@ -1,6 +1,5 @@
 <template>
   <v-layout wrap style="height: 200px;">
-
     <v-navigation-drawer v-model="$store.state.drawer" absolute temporary>
       <v-list class="pa-1">
         <v-list-tile avatar>
@@ -17,7 +16,7 @@
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
 
-        <v-list-tile v-for="item in items" :key="item.title" @click="k">
+        <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -32,11 +31,10 @@
 </template>
 
 <script>
-
 export default {
   data () {
     return {
-          items: [
+      items: [
         { title: '連絡先一覧', icon: 'list' }
       ]
     }
